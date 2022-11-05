@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Failed suite [Regressionsuit]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="classes" name="firefox(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="testpack.Verifytestclass">
+        <methods>
+          <include name="verifycontacttohelpbutton"/>
+          <include name="objectsrefremove"/>
+          <include name="opentheappprocess"/>
+          <include name="pomclassobjects"/>
+          <include name="closebrowser"/>
+          <include name="verifyreturnbutton"/>
+          <include name="logoutfromapp"/>
+          <include name="openbrowser"/>
+        </methods>
+      </class> <!-- testpack.Verifytestclass -->
+      <class name="testpack.Testclass">
+        <methods>
+          <include name="verifyreturnbutton"/>
+          <include name="opentheappprocess"/>
+          <include name="closebrowser"/>
+          <include name="verifycontacttohelpbutton"/>
+          <include name="objectsrefremove"/>
+          <include name="openbrowser"/>
+          <include name="logoutfromapp"/>
+          <include name="pomclassobjects"/>
+        </methods>
+      </class> <!-- testpack.Testclass -->
+    </classes>
+  </test> <!-- firefox(failed) -->
+</suite> <!-- Failed suite [Regressionsuit] -->
